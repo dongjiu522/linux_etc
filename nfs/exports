@@ -1,0 +1,9 @@
+#1.install package
+#sudo apt-get install nfs-kernel-server
+#2.edit /etc/exports
+#explain
+# dir  				ip_address(mode)
+/home/ubuntu/work 	*(rw,sync,no_root_squash,no_subtree_check)
+
+#3.restart nfs-kernel-server
+#sudo service nfs-kernel-server restart
